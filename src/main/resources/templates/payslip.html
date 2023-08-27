@@ -10,30 +10,28 @@
     </div>
     <div style="width: 33.333333%; max-width: 33.333333%; padding-right: 15px; padding-left: 15px; float: left; text-align: start; margin-left: 16.666666%; margin-bottom: 3rem;">
     <h1>FICHE EMPLOYE</h1>
-        <p>Registration Number: <span th:text="${employee.registrationNumber}"></span></p>
-        <p>Last name: <span th:text="${employee.lastName}"></span></p>
-        <p>First name: <span th:text="${employee.firstName}"></span></p>
-        <p>Age: <span th:text="${employee.age}"></span></p>
-        <p>Entrance date: <span th:text="${employee.entranceDate}"></span></p>
-        <p>Departure date: <span th:text="${employee.departureDate}"></span></p>
-        <p>Cnaps number: <span th:text="${employee.cnaps}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Registration Number: <span th:text="${employee.registrationNumber}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Last name: <span th:text="${employee.lastName}"></span></p>
+        <p style="margin-bottom: 0.3rem;">First name: <span th:text="${employee.firstName}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Age: <span th:text="${employee.age}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Entrance date: <span th:text="${employee.entranceDate}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Departure date: <span th:text="${employee.departureDate}"></span></p>
+        <p style="margin-bottom: 0.3rem;">Cnaps number: <span th:text="${employee.cnaps}"></span></p>
     </div>
 </div>
-<div style="margin-right: auto; margin-left: auto; text-align: center;">
-    <h1>Informations sur le salaire: </h1>
+<div style="width: 100%; text-align: center;">
+    <h2>Informations sur le salaire: </h2>
     <br />
     <p><strong>Salaire brut actuel: </strong> <span th:text="${employee.salary}"></span>
     <span>Ariary / Mois</span></p>
 </div>
-<hr />
 <div>
-    <div style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div style="padding-top: 1.5rem; padding-bottom: 1.5rem; position: fixed; bottom: 10px">
+        <hr />
         <div style="width: 100%; margin-right: auto; margin-left: auto;">
             <div style="display: table; width: 100%;">
                 <div style="display: table-cell; width: 33.333333%; padding-right: 15px; padding-left: 15px;">
-                    <div style="display: table-cell; width: 100%; vertical-align: middle;">
-                        <img th:src="${companyConf.logo}" style="width: 150px; height: 150px;" alt="logo" />
-                    </div>
+                        <img th:src="${companyConf.logo}" style="width: 100px; height: 100px;" alt="logo" />
                 </div>
 
                 <div style="display: table-cell; width: 33.333333%; padding-right: 15px; padding-left: 15px;">
