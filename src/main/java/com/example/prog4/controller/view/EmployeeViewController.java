@@ -4,6 +4,7 @@ import com.example.prog4.controller.PopulateController;
 import com.example.prog4.controller.mapper.EmployeeMapper;
 import com.example.prog4.model.Employee;
 import com.example.prog4.model.EmployeeFilter;
+import com.example.prog4.model.enums.BirthDateOption;
 import com.example.prog4.service.EmployeeService;
 import jakarta.servlet.http.HttpSession;
 import lombok.AllArgsConstructor;
@@ -30,7 +31,9 @@ public class EmployeeViewController extends PopulateController {
     ) {
         model.addAttribute("employees", employeeService.getAll(filters).stream().map(employeeMapper::toView).toList())
                 .addAttribute("employeeFilters", filters)
-                .addAttribute("directions", Sort.Direction.values());
+                .addAttribute("directions", Sort.Direction.values())
+                .addAttribute("ageOptions", BirthDateOption.values());
+
         session.setAttribute("employeeFiltersSession", filters);
 
         return "employees";

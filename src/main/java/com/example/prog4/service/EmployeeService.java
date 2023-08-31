@@ -3,6 +3,7 @@ package com.example.prog4.service;
 import com.example.prog4.cnapsrepo.EmployeeCnapsRepository;
 import com.example.prog4.cnapsrepo.entity.EmployeeCnapsEntity;
 import com.example.prog4.model.EmployeeFilter;
+import com.example.prog4.model.enums.BirthDateOption;
 import com.example.prog4.model.exception.NotFoundException;
 import com.example.prog4.repository.EmployeeInternRepository;
 import com.example.prog4.repository.EmployeeRepositoryFacade;
@@ -25,6 +26,10 @@ public class EmployeeService {
 
 
     public Employee getOne(String id) {
+        return employeeRepositoryFacade.findOne(id);
+    }
+
+    public Employee getOneByAgeOption(String id, BirthDateOption ageOption) {
         return employeeRepositoryFacade.findOne(id);
     }
 

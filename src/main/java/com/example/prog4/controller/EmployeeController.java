@@ -5,6 +5,7 @@ import com.example.prog4.controller.mapper.EmployeeMapper;
 import com.example.prog4.controller.validator.EmployeeValidator;
 import com.example.prog4.model.Employee;
 import com.example.prog4.model.EmployeeFilter;
+import com.example.prog4.model.enums.BirthDateOption;
 import com.example.prog4.service.CSVUtils;
 import com.example.prog4.service.EmployeeService;
 import com.example.prog4.service.PDFService;
@@ -62,8 +63,9 @@ public class EmployeeController {
     }
 
     @GetMapping("/payslip/{eId}")
-    public ResponseEntity<byte[]> generatePaySlipPdf(@PathVariable String eId, Model model) throws DocumentException, IOException {
-        Employee toShow = employeeMapper.toView(employeeService.getOne(eId));
+    public ResponseEntity<byte[]> generatePaySlipPdf(@PathVariable String eId, @RequestParam(defaultValue = "BIRTHDAY") String ageOption) throws DocumentException, IOException {
+        BirthDateOption birthDateOption = BirthDateOption.valueOf(ageOption);
+        Employee toShow = employeeMapper.toView(employeeService.getOne(eId), birthDateOption);
 
         Context context = new Context();
         context.setVariable("employee", toShow);
