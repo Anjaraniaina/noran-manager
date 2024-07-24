@@ -41,7 +41,7 @@
                 <select id="sex" th:field="*{sex}" name="sex" class="form-select">
                     <option selected th:value="${null}">Chose your sex</option>
                     <option th:value="${sex}" th:text="${sex}"
-                            th:each="sex : ${T(com.example.prog4.repository.entity.enums.Sex).values()}"></option>
+                            th:each="sex : ${T(me.noran.manager.repository.entity.enums.Sex).values()}"></option>
                 </select>
             </div>
             <div class="col-md-4 col-12 col-sm-6">
@@ -77,7 +77,7 @@
             <div class="col-md-4 col-12 col-sm-6">
                 <label for="orderBy" class="form-label">OrderBy</label>
                 <select id="orderBy" th:field="*{orderBy}" name="orderBy" class="form-select">
-                    <option th:each="orderByEnum : ${T(com.example.prog4.model.enums.EmployeeSortField).values()}"
+                    <option th:each="orderByEnum : ${T(me.noran.manager.model.enums.EmployeeSortField).values()}"
                             th:value="${orderByEnum}"
                             th:text="${orderByEnum}"></option>
                 </select>

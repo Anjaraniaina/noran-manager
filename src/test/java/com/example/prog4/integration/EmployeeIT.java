@@ -1,7 +1,7 @@
-package com.example.prog4.integration;
+package me.noran.manager.integration;
 
-import com.example.prog4.cnapsrepo.EmployeeCnapsRepository;
-import com.example.prog4.repository.EmployeeInternRepository;
+import me.noran.manager.cnapsrepo.EmployeeCnapsRepository;
+import me.noran.manager.repository.EmployeeInternRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

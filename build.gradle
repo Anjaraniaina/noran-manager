@@ -4,7 +4,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.0'
 }
 
-group = 'com.example'
+group = 'me.noran'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -19,6 +19,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
@@ -26,9 +27,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.flywaydb:flyway-core'
-	implementation 'org.xhtmlrenderer:flying-saucer-pdf:9.1.20'
+	implementation 'org.xhtmlrenderer:flying-saucer-pdf:9.9.0'
 	implementation 'ognl:ognl:3.4.2'
-	implementation 'com.opencsv:opencsv:5.5.2'
+	implementation 'com.opencsv:opencsv:5.9'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.postgresql:postgresql'
