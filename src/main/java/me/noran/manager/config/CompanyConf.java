@@ -9,11 +9,11 @@ import java.util.List;
 @Data
 @ToString
 public class CompanyConf {
-    private final String name = "Numer";
-    private final String description = "We are number";
+    private final String name = "Manager";
+    private final String description = "The best employee management tool";
     private final String slogan = "To be the best, you need the best";
     private final String address = "Ivandry";
-    private final String email = "numer@gmail.com";
+    private final String email = "manager@noran.org";
     private final List<Phone> phones = List.of(
             Phone.builder().value("37481798435").build(),
             Phone.builder().value("09848739845").build()

@@ -1,7 +1,12 @@
-INSERT INTO "employee" (first_name, last_name,
-                        registration_number, personal_email, cin, cnaps, birth_date,
-                        entrance_date, departure_date, professional_email,
-                        address)
-values ('Anjra', 'Lore', '3456', 'hei@jklms.com',
-        '123345678456', 'aeFH5347', '2023-10-23', '2023-10-23', '2023-10-23', 'hey@gmail.com',
-        'random address');
+INSERT INTO "employee" (id, first_name, last_name, personal_email, cin, cnaps, birth_date, entrance_date, departure_date, professional_email, address, end_to_end_id, children_number)
+VALUES
+    ('a1d12ef5-1e34-4e6f-8f29-df67d3f77b6e', 'John', 'Doe', 'john.doe1@example.com', '123456789012', 'CNAPS123456', '1990-01-01', '2023-01-01', NULL, 'john.doe1@company.com', '123 Main St', 'a1d12ef5-1e34-4e6f-8f29-df67d3f77b6e', 2),
+    ('b56cdb25-1a2c-487f-8b19-6595fae1b8f5', 'Jane', 'Doe', 'jane.doe1@example.com', '234567890123', 'CNAPS234567', '1991-02-02', '2023-02-01', NULL, 'jane.doe1@company.com', '456 Elm St', 'b56cdb25-1a2c-487f-8b19-6595fae1b8f5', 1),
+    ('c5b3ec3a-2bfc-45d6-94f5-8ef707b18b76', 'Jim', 'Beam', 'jim.beam1@example.com', '345678901234', 'CNAPS345678', '1992-03-03', '2023-03-01', NULL, 'jim.beam1@company.com', '789 Oak St', 'c5b3ec3a-2bfc-45d6-94f5-8ef707b18b76', 0),
+    ('d8e2f3a5-3b2e-44ef-9f4b-81c39fb4a612', 'Jack', 'Daniels', 'jack.daniels1@example.com', '456789012345', 'CNAPS456789', '1993-04-04', '2023-04-01', NULL, 'jack.daniels1@company.com', '101 Pine St', 'd8e2f3a5-3b2e-44ef-9f4b-81c39fb4a612', 3),
+    ('e0f6a3d6-4e2f-4d3b-9e8c-9c6dfcfe5a3a', 'Jill', 'Valentine', 'jill.valentine1@example.com', '567890123456', 'CNAPS567890', '1994-05-05', '2023-05-01', NULL, 'jill.valentine1@company.com', '202 Maple St', 'e0f6a3d6-4e2f-4d3b-9e8c-9c6dfcfe5a3a', 1),
+    ('f7e4d8b7-5f1c-4e19-85fb-a6f76d3e9b7b', 'Chris', 'Redfield', 'chris.redfield1@example.com', '678901234567', 'CNAPS678901', '1995-06-06', '2023-06-01', NULL, 'chris.redfield1@company.com', '303 Birch St', 'f7e4d8b7-5f1c-4e19-85fb-a6f76d3e9b7b', 2),
+    ('b0c7d4e8-6a2b-45c6-9a1d-2e8c1b9e9f7b', 'Claire', 'Redfield', 'claire.redfield1@example.com', '789012345678', 'CNAPS789012', '1996-07-07', '2023-07-01', NULL, 'claire.redfield1@company.com', '404 Cedar St', 'b0c7d4e8-6a2b-45c6-9a1d-2e8c1b9e9f7b', 0),
+    ('b1d7e8f9-7b3c-4e8f-93a1-c7d2f3a5e6b7', 'Leon', 'Kennedy', 'leon.kennedy1@example.com', '890123456789', 'CNAPS890123', '1997-08-08', '2023-08-01', NULL, 'leon.kennedy1@company.com', '505 Walnut St', 'b1d7e8f9-7b3c-4e8f-93a1-c7d2f3a5e6b7', 3),
+    ('c8e2f4a7-7b8f-4f2e-9a3d-2e8f3a4b5c6d', 'Ada', 'Wong', 'ada.wong1@example.com', '901234567890', 'CNAPS901234', '1998-09-09', '2023-09-01', NULL, 'ada.wong1@company.com', '606 Cherry St', 'c8e2f4a7-7b8f-4f2e-9a3d-2e8f3a4b5c6d', 1),
+    ('d8f7e9b0-8c5f-4f3a-9d4e-3e7f5a8b9c6d', 'Albert', 'Wesker', 'albert.wesker1@example.com', '012345678901', 'CNAPS012345', '1999-10-10', '2023-10-01', NULL, 'albert.wesker1@company.com', '707 Ash St', 'd8f7e9b0-8c5f-4f3a-9d4e-3e7f5a8b9c6d', 2);

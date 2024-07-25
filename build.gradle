@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'me.noran'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 
 java {
 	sourceCompatibility = '17'
@@ -30,10 +30,10 @@ dependencies {
 	implementation 'org.xhtmlrenderer:flying-saucer-pdf:9.9.0'
 	implementation 'ognl:ognl:3.4.2'
 	implementation 'com.opencsv:opencsv:5.9'
-	compileOnly 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok:1.18.34'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.postgresql:postgresql'
-	annotationProcessor 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok:1.18.34'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

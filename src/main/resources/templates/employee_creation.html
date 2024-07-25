@@ -26,7 +26,7 @@
             <input required name="address" th:field="*{address}" class="form-control" id="inputAddress">
         </div>
         <div class="col-lg-4 col-md-6">
-            <label for="image" class="form-label">Address</label>
+            <label for="image" class="form-label">Profile Picture</label>
             <input name="address" type="file" th:field="*{image}" class="form-control" id="image">
         </div>
         <div class="col-lg-4 col-md-6">
@@ -97,6 +97,9 @@
                             th:onclick="'removePhone(' + ${phoneStatus.index} + ')'">Remove
                     </button>
                 </div>
+            </div>
+            <div>
+                <label class="form-label">CSP</label>
             </div>
             <button type="button" class="btn btn-info" th:onclick="addPhone()">Add Phone</button>
         </div>
